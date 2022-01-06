@@ -1,39 +1,25 @@
-window.addEventListener('load',function(){
-    const slide = document.querySelector('#slide')
-    const slideMain = document.querySelector('.slide-items')
-    const slideItem = document.querySelectorAll('.slide-item')
-    const nextBtn = document.querySelector('.move.next')
-    const prevBtn = document.querySelector('.move.prev')
-    const dotItem = document.querySelectorAll('.dot-slide')
-    const slideItemWidth = slideItem[0].offsetWidth
-    const slideLength = slideItem.length
-    let index = [0]
-    let postionX = 0
-    nextBtn.addEventListener("click",function(){
-        dandleChangeSlide(1)
-    })
-    prevBtn.addEventListener("click",function(){
-        dandleChangeSlide(-1)
-    })
-    
-    function dandleChangeSlide(dir){
-        if (dir === 1){
-            if (index >= slideLength - 1){
-                index = slideLength - 1
-                return
-            }
-            postionX = postionX - slideItemWidth
-            slideMain.style.transform = `translateX(${postionX}px)`
-            index++
 
-        }else if(dir === -1){
-            if (index <= 0) {
-                index = 0
-                return
-            }
-            postionX = postionX + slideItemWidth
-            slideMain.style.transform = `translateX(${postionX}px)`
-            index--
-        }
-    }
+
+//slick slider
+$(document).ready(function(){
+    $(".featured_products-slider").slick({
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        draggable: true,
+        prevArrow:"<button type='button' class='slick-prev pull-left'><i class='ti-angle-left' aria-hidden='true'></i></button>",
+        nextArrow:"<button type='button' class='slick-next pull-right'><i class='ti-angle-right' aria-hidden='true'></i></button>"
+    });
+    $("#slide .slide-wrapper .slide-items").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        draggable: true,
+        autoplay: true,
+        pauseOnFocus: false,
+        autoplaySpeed: 2000,
+        fade: true,
+        cssEase: 'linear',
+        prevArrow:"<button type='button' class='slick-prev pull-left'><i class='ti-angle-left' aria-hidden='true'></i></button>",
+        nextArrow:"<button type='button' class='slick-next pull-right'><i class='ti-angle-right' aria-hidden='true'></i></button>"
+    });
 })
+//slick slider end
