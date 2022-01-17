@@ -1,0 +1,260 @@
+/* table pro ----------------------- */
+@media screen and (max-width:1024px){
+  /* heading--- */
+  #heading .header-right{
+    font-size: 20px;
+  }
+  .nav-links{
+    width: 45%;
+  }
+  .header-right a{
+    font-size: 13px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+  }
+  /* end heading--- */
+  /* banner_white--- */
+  .container{
+    max-width: 800px;
+  }
+  .banner_white{
+    margin-bottom: 70px;
+  }
+  .banner_white .row .col1 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .banner_white .row .col1 button {
+    width: 140px;
+    height: 30px;
+    font-size: 15px;
+  }
+  .banner_white .row .col1 .banner_t {
+    margin-bottom: 20px;
+  }
+  .banner_white .row .col1 .banner_bt .desc{
+    padding: 45px 20px;
+  }
+  .banner_white .row .col1 .banner_bt .desc h1 {
+    font-size: 16px;
+  }
+  .banner_white .row .col1 .banner_bt .desc p{
+    font-size: 13px;
+  }
+  /* end banner_white--- */
+  /* featured_products */
+  #featured_products .title_{
+    padding-bottom: 40px;
+  }
+  #featured_products .container{
+    max-width: 885px;
+  }
+  #featured_products .container .products p {
+    margin-top: 10px;
+}
+  /* end featured_products */
+  /* featured_sale--- */
+  .follow_container .item a .desc{
+    padding: 17px;
+  }
+  .follow_container .item a .desc p {
+    margin-bottom: 10px;
+  }
+  .featured__sale .item2 .sale_desc .price a{
+    font-size: 15px;
+  }
+  .featured__sale .item2 .sale_desc .price p{
+    font-size: 15px;
+  }
+  .featured__sale .item2 .time_line {
+    margin-top: 15px;
+  }
+  .featured__sale .item2 .time_line .time{
+    width: 55px;
+    height: 55px;
+  }
+  /* end featured_sale--- */
+  /* follow--- */
+  .follow_container .item:hover a .icon {
+    top: 15px;
+    left: 23px;
+    font-size: 14px;
+  }
+  /* end follow--- */
+
+}
+/* ipad pro -------------- */
+@media screen and (max-width:768px) {
+  /* heading--- */
+  header {
+    margin-bottom: 20px;
+  }
+  #heading{
+    height: 40px;
+    justify-content: space-between;
+    position: relative;
+  }
+  .logo{
+    width: 70%;
+    text-align: center;
+  }
+  nav .logo h1{
+    font-size: 25px;
+  }
+  .nav-links {
+    width: 55%;
+  }
+  .nav-links{
+    position: absolute;
+    right: 0px;
+    height: 80vh;
+    top: 60px;
+    background-color: #d7d7d7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    width: 50%;
+  }
+  .nav-links li{
+    text-align: center;
+    opacity: 0;
+  }
+  #burger{
+    display: block;
+  }  
+  #burger div{
+  width: 25px;
+  height: 3px;
+  border-radius: 3px;
+  background-color: #424242;
+  margin: 4px;
+  transition: transform 0.5s ease ,opacity 0.2s ease;
+  }
+  .toggle .line1{
+    transform: translate(0px ,7px) rotate(-45deg);
+  }
+  .toggle .line2{
+    opacity: 0;
+  }
+  .toggle .line3{
+    transform: translate(0px ,-7px) rotate(45deg);
+  }
+  @keyframes navLinkFade {
+    from{
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to{
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  .nav-active{
+    transform: translateX(0%);
+  }
+  /* featured_products--- */
+  .featured_products-slider i{
+    font-size: 20px;
+  }
+  #featured_products .container .products p{
+    font-size: 12px;
+    padding-bottom: 0px;
+  }
+  #featured_products .container .products span{
+    font-size: 12px;
+  }
+  #featured_products .container .products .products__img{
+    text-align: center;
+  }
+  #featured_products .container .products .products__img:hover .products__cart {
+    bottom: 45px;
+  }
+  #featured_products .container .products .products__img:hover img {
+    opacity: 0.7;
+  }
+  #featured_products .container .products .products__cart button{
+    height: 30px;
+    width: 70%;
+    font-size: 12px;
+  }
+  /* .featured__sale--- */
+  .featured__sale .item1 .sale_desc span {
+    font-size: 20px;
+  }
+  .featured__sale .item1 .sale_desc h3 {
+    font-size: 30px;
+  }
+  .featured__sale .item1 .sale_desc a {
+    padding-top: 5px;
+  }
+  .featured__sale .item2 .sale_desc {
+    bottom: 8px;
+  }
+  .featured__sale .item2 .sale_desc .price p {
+    font-size: 13px;
+    padding-top: 3px;
+  }
+  .featured__sale .item2 .time_line{
+    margin-top: 5px;
+  }
+  .featured__sale .item2 .time_line .time {
+    width: 45px;
+    height: 45px;
+    font-size: 13px;
+  }
+  /* follow--- */
+  
+  .follow_container .item:hover a .icon {
+    top: 5px;
+    left: 7px;
+    font-size: 11px;
+  }
+  .follow_container .item a .desc {
+    padding: 10px;
+  }
+  .follow_container .item a .desc {
+    font-size: 8px;
+  }
+  /* shipping--- */
+  .shipping {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+  /* end heading--- */
+  /* footer--- */
+  footer .container_footer {
+    padding: 38px 13px;
+  }
+  footer .container_footer .item h3{
+    font-size: 12px;
+  }
+  footer .container_footer .address a {
+    padding-top: 15px;
+  }
+  footer .container_footer .item a{
+    font-size: 11px;
+  }
+  footer .container_footer .item:first-child{
+    padding-right: 10px;
+  }
+  footer .container_footer .item:last-child{
+    padding-left: 25px;
+  }
+  footer .container_footer .link .links .col{
+    align-items: center;
+  }
+  footer .container_footer .mail button {
+    font-size: 12px;
+    width: 50%;
+    height: 30px;
+  }
+  footer .support{
+    font-size: 12px;
+  }
+}
+@media screen and (max-width:600px){
+
+}
